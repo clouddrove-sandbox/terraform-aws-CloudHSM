@@ -1,0 +1,46 @@
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+    # Add assignees
+    assignees:
+      - "clouddrove-ci"
+    # Add reviewer
+    reviewers:
+      - "approvers"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "examples/ec2-network-mode-awsvpc" # Location of package manifests
+    schedule:
+      interval: "weekly"
+    # Add assignees
+    assignees:
+      - "clouddrove-ci"
+    # Add reviewer
+    reviewers:
+      - "approvers"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "examples/ec2-network-mode-bridge" # Location of package manifests
+    schedule:
+      interval: "weekly"
+    # Add assignees
+    assignees:
+      - "clouddrove-ci"
+    # Add reviewer
+    reviewers:
+      - "approvers"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "examples/fargate" # Location of package manifests
+    schedule:
+      interval: "weekly"
+    # Add assignees
+    assignees:
+      - "clouddrove-ci"
+    # Add reviewer
+    reviewers:
+      - "approvers"
+      
