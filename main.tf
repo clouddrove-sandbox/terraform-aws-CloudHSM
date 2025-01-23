@@ -35,4 +35,6 @@ resource "aws_cloudhsm_v2_hsm" "hsm" {
 
   cluster_id = aws_cloudhsm_v2_cluster.cluster.cluster_id
   subnet_id  = var.subnet_ids[count.index]
+
+  depends_on = [ aws_cloudhsm_v2_cluster.cluster]
 }

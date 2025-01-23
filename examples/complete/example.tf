@@ -42,7 +42,7 @@ module "subnets" {
 }
 
 module "cloudhsm" {
-  source = "../"
+  source = "../.."
 
   cluster_name = local.name
   vpc_id       = module.vpc.vpc_id

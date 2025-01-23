@@ -8,5 +8,5 @@ jobs:
     secrets:
       GITHUB: ${{ secrets.GITHUB }}
     with:
-      tfcheck: 'ec2-network-mode-awsvpc / Check code format'
+      tfcheck: 'CloudHSM cluster and HSm module / Check code format'
 ...
